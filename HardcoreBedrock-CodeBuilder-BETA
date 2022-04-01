@@ -1,0 +1,58 @@
+("MAKE SURE TO USE EDUCATION EDITION OPTION ON MC BEDROCK AND USE CODE BUILDER AND MICROSOFT MAKECODE")
+('Switch From Blocks To Javascript On The Top And Paste In This')
+
+player.onDied(function () {
+
+    if (startmod_mcbedrckhrdcre == 1) {
+
+        deathcounter = 1
+
+    }
+
+})
+
+player.onChat(".loadmod", function () {
+
+    startmod_mcbedrckhrdcre = 1
+
+    player.say("Running Hardcore Bedrock. (THIS PROJECT IS IN BETA AND MAY HAVE BUGS).")
+
+})
+
+loops.forever(function () {
+
+    if (deathcounter == 1) {
+
+        mobs.kill(
+
+        mobs.target(NEAREST_PLAYER)
+
+        )
+
+        gameplay.setGameMode(
+
+        SURVIVAL,
+
+        mobs.target(NEAREST_PLAYER)
+
+        )
+
+    }
+
+})
+
+let deathcounter = 0
+
+let startmod_mcbedrckhrdcre = 0
+
+startmod_mcbedrckhrdcre = 0
+
+deathcounter = 0
+
+gameplay.setGameMode(
+
+SURVIVAL,
+
+mobs.target(NEAREST_PLAYER)
+
+)
